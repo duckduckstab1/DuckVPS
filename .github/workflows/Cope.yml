@@ -1,4 +1,4 @@
-name: Start your vps
+name: Start your vps 2.0
 
 on: workflow_dispatch
 
@@ -21,7 +21,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/redgans/RDPngrokkk/main/launcher/Node.js.lnk -OutFile Node.js.lnk
         Invoke-WebRequest https://raw.githubusercontent.com/redgans/RDPngrokkk/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Extracting Ngrok Files
-      run: Expand-Archive ngrok.zip
+      run: Expand-Archive ngrok.zip and Duck it
     - name: Connect To Ngrok Account
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
