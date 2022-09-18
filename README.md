@@ -1,0 +1,2 @@
+# DuckVPS
+The better GraveVPS
